@@ -1,7 +1,22 @@
+# Build / Gradle
 /build/
-/out/
 /.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# IDE
 /.idea/
 /*.iml
-.env
+/out/
+
+# Logs / temp
 *.log
+*.tmp
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated
+/src/main/generated/
