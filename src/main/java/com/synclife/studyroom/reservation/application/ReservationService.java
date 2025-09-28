@@ -1,8 +1,10 @@
-package com.synclife.studyroom.reservation;
+package com.synclife.studyroom.reservation.application;
 
 import com.synclife.studyroom.auth.AuthContext;
-import com.synclife.studyroom.room.Room;
-import com.synclife.studyroom.room.RoomRepository;
+import com.synclife.studyroom.reservation.domain.Reservation;
+import com.synclife.studyroom.reservation.domain.ReservationRepository;
+import com.synclife.studyroom.room.domain.Room;
+import com.synclife.studyroom.room.domain.RoomRepository;
 import com.synclife.studyroom.reservation.dto.CreateReservationRequest;
 import com.synclife.studyroom.reservation.dto.ReservationResponse;
 import org.springframework.dao.DataIntegrityViolationException;

@@ -1,6 +1,8 @@
-package com.synclife.studyroom.room;
+package com.synclife.studyroom.room.application;
 
 import com.synclife.studyroom.auth.AuthContext;
+import com.synclife.studyroom.room.domain.Room;
+import com.synclife.studyroom.room.domain.RoomRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

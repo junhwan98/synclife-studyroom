@@ -1,8 +1,8 @@
-package com.synclife.studyroom.reservation;
+package com.synclife.studyroom.reservation.web;
 
-import com.synclife.studyroom.api.ReservationsApi;
 import com.synclife.studyroom.auth.AuthContext;
 import com.synclife.studyroom.auth.AuthFilter;
+import com.synclife.studyroom.reservation.application.ReservationService;
 import com.synclife.studyroom.reservation.dto.CreateReservationRequest;
 import com.synclife.studyroom.reservation.dto.ReservationResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;

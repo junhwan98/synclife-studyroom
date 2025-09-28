@@ -1,6 +1,6 @@
-package com.synclife.studyroom.reservation;
+package com.synclife.studyroom.reservation.domain;
 
-import com.synclife.studyroom.room.Room;
+import com.synclife.studyroom.room.domain.Room;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;

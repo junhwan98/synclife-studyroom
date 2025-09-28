@@ -1,4 +1,4 @@
-package com.synclife.studyroom.room;
+package com.synclife.studyroom.room.domain;
 
 import org.springframework.data.jpa.repository.*;
 

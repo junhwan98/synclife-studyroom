@@ -1,8 +1,11 @@
-package com.synclife.studyroom.room;
+package com.synclife.studyroom.room.web;
 
 import com.synclife.studyroom.api.RoomsApi;
 import com.synclife.studyroom.auth.AuthContext;
 import com.synclife.studyroom.auth.AuthFilter;
+import com.synclife.studyroom.reservation.application.ReservationService;
+import com.synclife.studyroom.room.application.RoomService;
+import com.synclife.studyroom.room.domain.Room;
 import com.synclife.studyroom.room.dto.CreateRoomRequest;
 import com.synclife.studyroom.room.dto.RoomAvailabilityResponse;
 import com.synclife.studyroom.room.dto.RoomResponse;
@@ -23,7 +26,7 @@ import java.util.List;
 public class RoomController implements RoomsApi {
 
     private final RoomService roomService;
-    private final com.synclife.studyroom.reservation.ReservationService reservationService;
+    private final ReservationService reservationService;
 
     @PostMapping("/rooms")
     @ResponseStatus(HttpStatus.CREATED)

@@ -1,4 +1,4 @@
-package com.synclife.studyroom.reservation;
+package com.synclife.studyroom.reservation.domain;
 
 import org.springframework.data.jpa.repository.*;
 import org.springframework.data.repository.query.Param;

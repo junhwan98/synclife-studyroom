@@ -1,4 +1,4 @@
-package com.synclife.studyroom.api;
+package com.synclife.studyroom.reservation.web;
 
 import com.synclife.studyroom.reservation.dto.CreateReservationRequest;
 import com.synclife.studyroom.reservation.dto.ReservationResponse;
