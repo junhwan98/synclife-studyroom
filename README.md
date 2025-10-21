@@ -103,12 +103,3 @@ erDiagram
 
 ## 테스트
 - 같은 시간대 병렬 INSERT 10개 → 1건 성공 검증
-
-## LLM 사용 내역
-- **DB 겹침 제약 설계**: PostgreSQL `tstzrange + EXCLUDE USING gist` 채택 배경/주의점 설명 자문 → `schema.sql` 초안 작성에 참고.  
-  (실제로 테스트·튜닝하며 제약명 `reservations_no_overlap` 부여 및 409 매핑 검증)
-- **동시성 테스트 패턴**: `ExecutorService` + `CountDownLatch`로 병렬 10건 중 1건 성공 검증 아이디어.  
-  (테스트코드 작성하고 실제 DB 붙여 통과 확인)
-- **Swagger 문서화**: `OpenApiConfig` 그룹/정렬, `docExpansion`, `persistAuthorization` 등 UI 가독성 옵션 제안 및 컨트롤러 주석 예시.  
-- **Git/Gradle/PowerShell 명령 가이드**: OneDrive 잠금 이슈, `JAVA_HOME`/Gradle Toolchain 문제 해결.  
-> 모든 설계·코드 결정은 직접 검증·수정하여 반영
